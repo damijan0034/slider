@@ -1,0 +1,50 @@
+
+body{
+    margin: 0;
+    background-color: wheat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,.5);
+    
+    
+}
+
+.img-container{
+   transition: transform .5s ease-in-out;
+   display: flex;
+   
+  
+   
+   
+}
+
+.btn{
+    
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    color: white;
+    opacity: .5;
+}
+
+.btn:hover{
+    opacity: 1;
+}
+
+.next{
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+
