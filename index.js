@@ -1,6 +1,11 @@
 const imgContainerEl=
 document.querySelector(".img-container")
 
+const input=
+document.querySelector(".input")
+const body=
+document.querySelector("body")
+
 const nextBtn=document.querySelector(".next")
 const prevBtn=document.querySelector(".prev")
 const imgsEl=document.querySelectorAll("img")
@@ -20,7 +25,7 @@ const updateImage=()=>{
     }
     updateImage()
     
-}, 3000);
+}, 300000);
 
    
 }
@@ -46,6 +51,22 @@ prevBtn.addEventListener("click",()=>{
     clearTimeout(timeout)
     updateImage()
     
+})
+
+
+//dark mode
+
+function updateBody(){
+    if(input.checked){
+        body.style.background="gray"
+    }
+    else{
+        body.style.background="white"
+    }
+}
+
+input.addEventListener("input",()=>{
+    updateBody()
 })
 
 
