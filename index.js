@@ -10,6 +10,8 @@ const nextBtn=document.querySelector(".next")
 const prevBtn=document.querySelector(".prev")
 const imgsEl=document.querySelectorAll("img")
 
+//slider
+
 let currentImg=1
 let timeout
 
@@ -25,7 +27,7 @@ const updateImage=()=>{
     }
     updateImage()
     
-}, 300000);
+}, 10000);
 
    
 }
@@ -63,6 +65,10 @@ function updateBody(){
     else{
         body.style.background="white"
     }
+}
+
+function updateLocalStorage(){
+   
 }
 
 input.addEventListener("input",()=>{

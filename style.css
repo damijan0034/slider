@@ -43,7 +43,7 @@ body{
 .label{
     width: 90px;
     height: 40px;
-    background-color:black ;
+    background-color:gray ;
     border-radius: 20px;
     position: relative;
     cursor: pointer;
